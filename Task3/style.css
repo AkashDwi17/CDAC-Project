@@ -1,0 +1,187 @@
+/* General Styling
+body {
+  font-family: "Comic Neue", cursive;
+  background-color: #fdf6f6;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #4a2e2b;
+}
+
+/* Screen Management */
+.screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid #ffcccc;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Buttons */
+.btn {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-family: "Comic Neue", cursive;
+  border: 3px solid #e57373;
+  background-color: #fff;
+  color: #e57373;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px #c25353;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #ffebee;
+  transform: translateY(-2px);
+  box-shadow: 0 6px #c25353;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #c25353;
+}
+
+/* Start & End Screens */
+#start-screen h1,
+#end-screen h1 {
+  font-size: 3em;
+  color: #388e3c;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.end-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Game Screen */
+#game-screen {
+  justify-content: space-between;
+}
+
+#game-screen h2 {
+  color: #d32f2f;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#plates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.plate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plate-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #6d4c41;
+  margin-bottom: 5px;
+}
+
+.drop-zone {
+  width: 140px;
+  height: 70px;
+  background-color: #e0e0e0;
+  border: 3px dashed #bdbdbd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.drop-zone.drag-over {
+  background-color: #c8e6c9;
+  border-color: #66bb6a;
+}
+
+.drop-zone img {
+  max-width: 60px;
+  max-height: 60px;
+  pointer-events: none;
+}
+
+/* Basket Styles */
+#basket-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#basket-container {
+  width: 400px;
+  height: 267px;
+  background: url("https://i.imgur.com/9P3h2vU.jpg") no-repeat center center;
+  background-size: contain;
+  position: relative;
+}
+
+.vegetable-hotspot {
+  position: absolute;
+  cursor: grab;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.vegetable-hotspot.dragging {
+  cursor: grabbing;
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #start-screen h1,
+  #end-screen h1 {
+    font-size: 2em;
+  }
+  #game-screen h2 {
+    font-size: 1.2em;
+  }
+  #plates-container {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .drop-zone {
+    width: 100px;
+    height: 50px;
+  }
+  .drop-zone img {
+    width: 45px;
+  }
+  #basket-container {
+    width: 300px;
+    height: 200px;
+  }
+} */
