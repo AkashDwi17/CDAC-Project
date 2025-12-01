@@ -1,0 +1,138 @@
+:root {
+  --border-color:#00bfa5;
+  --box-bg:#f5f5dc;
+  --box-border:#cccccc;
+  --text-red:#d32f2f;
+  --text-blue:#0288d1;
+}
+
+/* RESET */
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+  font-family: "Nunito", sans-serif;
+  background:#e9ecef;
+  padding:1rem;
+}
+
+/* MAIN WRAPPER */
+.game-container {
+  max-width:1100px;
+  margin:auto;
+  border:6px solid var(--border-color);
+  border-radius:16px;
+  background:#fff;
+  overflow:hidden;
+}
+
+/* HEADER */
+.title-main {
+  font-size:1.5rem;
+  color:var(--text-red);
+  font-weight:700;
+}
+
+/* LOGO */
+.logo-block { display:flex; flex-direction:column; align-items:center; }
+.logo-circle {
+  width:60px; height:60px;
+  border-radius:50%;
+  border:2px solid #fb923c;
+  overflow:hidden;
+}
+.logo-img { width:100%; height:100%; object-fit:cover; }
+.copyright-text { font-size:10px; }
+
+/* RESPONSIVE RABBIT IMAGE FIX */
+.rabbit-responsive {
+  width:100%;
+  height:auto;
+  max-width:600px;
+  max-height:55vh;
+  object-fit:contain;
+  padding:10px;
+}
+
+/* LEVEL 1 */
+#level-1 .level-content-1 {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+  min-height:60vh;
+}
+
+.letter-display-container {
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  align-items:center;
+}
+
+/* LETTER BOXES */
+.letter-box {
+  width:120px; height:120px;
+  background:var(--box-bg);
+  border:3px solid var(--box-border);
+  border-radius:12px;
+  font-size:3rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+}
+
+.large-box {
+  width:180px;
+  height:180px;
+  font-size:4rem;
+}
+
+.uppercase-color { color:var(--text-blue); }
+.lowercase-color { color:var(--text-red); }
+.empty { background:#eee !important; }
+
+/* OPTIONS */
+.option-letter {
+  padding:0.6rem 1rem;
+  font-size:1.8rem;
+  background:#eafbe7;
+  border-radius:8px;
+  cursor:pointer;
+  border:2px solid #bfe6c1;
+}
+.option-letter:focus {
+  outline:3px solid rgba(0,0,255,0.2);
+}
+
+/* STARS */
+.star-container {
+  display:flex;
+  gap:6px;
+  font-size:1.5rem;
+  color:gold;
+}
+
+/* FEEDBACK */
+#feedback-msg {
+  margin-top:10px;
+}
+
+/* HOME ICON */
+.home-icon {
+  width:40px;
+  cursor:pointer;
+}
+
+/* LEVEL COMPLETE */
+#level-complete {
+  background:#f8f9fa;
+  padding:15px;
+  border-radius:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .large-box { width:140px; height:140px; font-size:3rem; }
+  .letter-box { width:100px; height:100px; font-size:2.2rem; }
+  .option-letter { font-size:1.4rem; }
+}
